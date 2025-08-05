@@ -31,7 +31,7 @@ app.use(cors({
     allowedHeaders: ['Content-Type', 'Authorization', 'x-auth-token']
 }));
 
-app.use(express.json({ limit: '10mb' }));
+app.use(express.json({ limit: '10mb' }))
 app.use(cookieParser())
 
 app.use('/api/auth', require('./routes/authRoutes'));
