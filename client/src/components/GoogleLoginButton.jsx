@@ -3,7 +3,7 @@ import React from 'react';
 export const GoogleLoginButton = () => {
   const handleGoogleLogin = () => {
     const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000';
-    const googleAuthUrl = `${baseUrl}/api/auth/google`;
+    const googleAuthUrl = `${baseUrl}/auth/google`;
     window.location.href = googleAuthUrl;
   };
 
