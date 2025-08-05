@@ -22,7 +22,7 @@ app.use(session({
 }));
 
 app.use(passport.initialize());
-app.use(passport.session());
+app.use(passport.session())
 
 app.use(cors({
     origin: [process.env.CLIENT_URL, 'http://localhost:5173'],
